@@ -1,0 +1,23 @@
+{
+  "id": "4769015",
+  "name": "No1",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1420819",
+      "name": "next",
+      "font_class": "next",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "1508318",
+      "name": "prev",
+      "font_class": "prev",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    }
+  ]
+}
