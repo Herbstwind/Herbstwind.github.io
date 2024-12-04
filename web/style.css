@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(194, 141, 72);
+    height: 80px;
+    weight: 100%;
+    
+}
+header img{
+    width: 30%;
+}
+header a{
+    text-decoration: none;
+    color: black;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header li{
+    display: inline;
+    margin-right: 5vw;
+    font-size: 20 px;
+}  
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+header h1{
+    position: absolute;
+    left: 70px;
+    top: 0;
+    line-height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+    
+}
+.title{
+    background-color: antiquewhite;
+    color: black;
+    height: 45vw;
+    background-image: url("../image/back1.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title h1{
+    font-size: 60px;
+}
+.title h2{
+    color: rgb(49, 49, 49);
+}
+.body{
+    background-color: antiquewhite;
+    color: rgb(145, 139, 139);
+    height: 110vw;
+    background-image: url("../image/ls1.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.body h1 {
+    font-size: 40px;
+}
+.body h2{
+    font-size: 60px;
+}
+.list{
+    background-color: antiquewhite;
+    color: black;
+    height: 65vw;
+    background-image: url("../image/list.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: black;
+    color: #b7b7b7;
+    font-size: 17px;
+    line-height: 1.8em;
+    height: 60px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

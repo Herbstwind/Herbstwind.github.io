@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文芳墨宝</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        header h1 {
+            background-image: url(image/logol1.png);
+        }
+        
+        .book{
+            background-color: rgb(225, 187, 133);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            height:880px;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 15vw;
+            top: 38vh;
+        }
+        .book ul{
+            position: absolute;
+            transition: 1s;
+            transform-style: preserve-3d;
+            perspective: 900px;
+            list-style: none;
+            width:240px;
+            height:340px;
+            left: 20vw;
+        }
+        .book li{
+            transform-origin: left;
+            position:absolute;
+        }
+        .book li img{
+            width:240px;
+            height:340px;
+            box-shadow: 1px 4px 5px rgba(0,0,0,0.2);
+        }
+        .book li:nth-of-type(1){
+            transform: rotateY(-28deg);
+            transition: 2.6s;
+        }
+        .book li:nth-of-type(2){
+            transform: rotateY(-24deg);
+            transition: 2.2s;
+        }
+        .book li:nth-of-type(3){
+            transform: rotateY(-20deg);
+            transition: 1.8s;
+        }
+        .book li:nth-of-type(4){
+            transform: rotateY(-16deg);
+            transition: 1.4s;
+        }
+        .book li:nth-of-type(5){
+            transform: rotateY(-12deg);
+            transition: 1s;
+        }
+        .book li:nth-of-type(6){
+            transform: rotateY(-8deg);
+            transition: 0.6s;
+        }
+        .book li:nth-of-type(7){
+            transform: rotateY(-4deg);
+            transition: 0.2s;
+        }
+        .book ul:hover li:nth-of-type(1){
+            transform:rotateY(-180deg);
+            transition: 1.4s;
+        }
+        .book ul:hover li:nth-of-type(2){
+            transform:rotateY(-180deg);
+            transition: 2s;
+        }
+        .book ul:hover li:nth-of-type(3){
+            transform:rotateY(-180deg);
+            transition: 2.6s;
+        }
+        .book ul:hover li:nth-of-type(4){
+            transform:rotateY(-180deg);
+            transition: 3.2s;
+        }
+        .book ul:hover li:nth-of-type(5){
+            transform:rotateY(-180deg);
+            transition: 3.8s;
+        }
+        .book ul:hover li:nth-of-type(6){
+            transform:rotateY(-180deg);
+            transition: 3.9s;
+        }
+        .book ul:hover{
+            transform: translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>文芳墨宝</h1>
+    <nav>
+        <ul>
+            <li><a href="history.html">历史沿革</a></li>
+            <li><a href="minister.html">招贤纳士</a></li> 
+            <li><a href="treasure.html">虚空万藏</a></li>
+            <li><a href="../index.html">大明宫</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+    <section class="text">
+        <h1>罗刹文集，乃昌王衔首所著。</h1>
+        <h2>昌王好文甚，能为文言，亦通白话，常属文以示群臣。</h2>
+        <h2>臣莫不叹服，每有妙处，辄指以告诸，而拊掌赞曰。</h2>
+        <h2>由是文风大盛，朝内文臣武将莫不能吟诗赋文。</h2>
+        <h2>是时朝内以文会友，和诗投文，多有雅趣。</h2>
+        <h2>诸臣每有所得，多投于王，王则欣然鉴之。</h2>
+        <h2>臣以文贵者，如骆卿、孙卿等，不可胜数。</h2>
+        <h2>王喟然叹曰“天下文才，真如过江之鲫，然进入吾罟！”</h2>
+        <h2>后，王集诸妙文，结册，成书，亲为之序。</h2>
+        <h2>遂有此书。</h2>
+    </section>
+    <section class="book">
+        <ul>
+            <li><img src="../image/cover.jpg" ></li>
+            <li><img src="../image/paper.jpg" ></li>
+            <li><img src="../image/paper.jpg" ></li>
+            <li><img src="../image/paper.jpg" ></li>
+            <li><img src="../image/paper.jpg" ></li>
+            <li><img src="../image/paper.jpg" ></li>
+            <li><img src="../image/paper.jpg" ></li>
+          </ul>
+    </section>    
+        
+    </main>
+    <footer>
+        <p>Copyright © 2024 罗刹文造 All Right Reserved.</p>
+    </footer>  
+</body>
+</html>

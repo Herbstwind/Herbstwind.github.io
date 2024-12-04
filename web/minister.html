@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>招贤纳士</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header h1 {
+            background-image: url(image/logom.png);
+        }
+        .choose {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(177, 146, 104);
+        }
+
+        .shell {
+            position: relative;
+            min-width: 1000px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            transform-style: preserve-3d;
+            perspective: 900px;
+        }
+
+        .shell .box {
+            position: relative;
+            width: 250px;
+            height: 350px;
+            transition: 0.3s;
+            overflow: hidden;
+            margin: 30px;
+            transform: rotateY(0deg);
+            transition-delay: .1s;
+            border-radius: 5px;
+            border: #fff 5px solid;
+        }
+
+        .shell:hover .box {
+            transform: rotateY(20deg);
+        }
+        .shell .box:hover {
+            transform: rotateY(0deg) scale(1.25);
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+
+        .shell .box:hover~.box {
+            transform: rotateY(-20deg);
+        }
+
+        .shell .box .images img {
+            width: 100%;
+        }
+
+        .shell .box .content {
+            position: absolute;
+            top: 0;
+            width: 90%;
+            height: 100%;
+            z-index: 999;
+            padding: 15px;
+        }
+
+        .shell .box .content h2 {
+            color: rgb(240, 240, 48);
+            transition: 0.3s;
+            font-size: 20px;
+            transform: translateY(-100px);
+        }
+
+        .shell .box:hover .content h2 {
+            transform: translateY(-15px);
+        }
+
+        .shell .box .content p {
+            color: rgb(0, 0, 0);
+            transition: 0.3s;
+            font-size: 14px;
+            transform: translateY(600px);
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .shell .box:hover .content p {
+            transform: translateY(220px);
+        }
+
+    </style>
+    <script src="jquery.min.js" defer="defer" type="text/javascript" charset="utf-8"></script>
+    <script src="new_file.js" defer="defer" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1>招贤纳士</h1>
+    <nav>
+        <ul>
+            <li><a href="history.html">历史沿革</a></li>
+            <li><a href="literature.html">文芳墨宝</a></li>
+            <li><a href="treasure.html">虚空万藏</a></li>
+            <li><a href="../index.html">大明宫</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+    <section class="choose">
+        <div class="shell">
+            <div class="box">
+                <div class="images">
+                    <img src="../image/lmh.jpg">
+                </div>
+                <div class="content">
+                    <h2>李孟涵</h2>
+                    <p>山东烟台人，大罗刹国兵马大元帅，现就读于五道口职业技术学院。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/lzy.jpg">
+                </div>
+                <div class="content">
+                    <h2>林志洋</h2>
+                    <p>山东烟台人，大罗刹国开国元勋，国师，现就读于哈尔滨工业大学（威海校区）。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/wqf.jpg">
+                </div>
+                <div class="content">
+                    <h2>王晨昊</h2>
+                    <p>山东烟台人，大罗刹国草创之主，号昌王，现就读于关山口男子职业技术学院。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/xtx.jpg">
+                </div>
+                <div class="content">
+                    <h2>许天锡</h2>
+                    <p>山东烟台人，大罗刹国丞相，身兼数十职，乃大罗刹国半壁江山，现就读于浙江大学。
+                    </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="images">
+                    <img src="../image/zls.jpg">
+                </div>
+                <div class="content">
+                    <h2>赵洵</h2>
+                    <p>山东烟台人，大罗刹国学士，乃昌王座上客，现就读于北京中医药大学。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 罗刹文造 All Right Reserved.</p>
+    </footer> 
+    
+</body>
+</html>
