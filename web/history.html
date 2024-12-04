@@ -7,7 +7,77 @@
     <link rel="stylesheet" href="style.css">
     <style>
         header h1 {
-            background-image: url(image/logoh1.png);
+            background-image: url(../image/logoh1.png);
+        }
+        header{
+            z-index: 2;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(177, 146, 104);
+            z-index: 2;
+            background-image: url(../image/backl.jpg);
+            background-size: cover;
+            background-position: center
+            }
+        .wrap{
+            width: 1000px;
+            position: relative;
+            top: 50px;
+            height: 1000px;
+        }
+        .wrap::after{
+            content: '';
+            position: absolute;
+            top: 100px;
+            left: 50%;
+            width: 5px;
+            z-index: 1;
+            height: 600px;
+            background-color: rgba(206, 172, 39, 0.842);
+        }
+        .box{
+            position: relative;
+            width: 100%;
+            height: 120px;
+            margin-bottom: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .left,.right{
+            position: relative;
+            width: 40%;
+            height: 120px;
+            border-radius: 15px;
+            text-align: center;
+            color: rgb(34, 33, 33);
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+        }
+        .box:nth-child(even) .left{
+            background-color: rgb(220, 193, 156);
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+        .box:nth-child(odd) .right{
+            background-color: rgb(220, 193, 156);
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+        .center{
+            width: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 3;
+        }
+        .center>span{
+            width: 120px;
+            border-radius: 10px;
+            text-align:center;
+            font: 900 24px '';
+            line-height: 50px;
+            background-color: rgb(220, 193, 156);
         }
     </style>
 </head>
@@ -24,7 +94,51 @@
     </nav>
     </header>
     <main>
-
+        <div class="wrap">
+            <div class="box">
+                <div class="left"></div>
+                <div class="center"><span>
+                    2023年十一月
+                </span></div>
+                <div class="right">大罗刹国成立，尊昌王，立林国师。
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="left">大罗刹国群臣就位，蒸蒸日上，百废俱兴。
+                </div>
+                <div class="center"><span>
+                    2023年十一月
+                </span></div>
+                <div class="right"></div>
+            </div>
+    
+            <div class="box">
+                <div class="left"></div>
+                <div class="center"><span>
+                    2023年十二月
+                </span></div>
+                <div class="right">大罗刹国文风兴盛初露端倪，王初赠许公诗。
+                </div>
+            </div>
+    
+            <div class="box">
+                <div class="left">大罗刹国文风兴盛，群臣皆以作文吟诗为荣，王说乐之。
+                </div>
+                <div class="center"><span>
+                    2024年三月
+                </span></div>
+                <div class="right"></div>
+            </div>
+    
+            <div class="box">
+                <div class="left"></div>
+                <div class="center"><span>
+                    2024年六月
+                </span></div>
+                <div class="right">王集诸文，欲以之成册，传诸后人。</div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Copyright © 2024 罗刹文造 All Right Reserved.</p>
